@@ -1,29 +1,477 @@
-<!DOCTYPE html><html lang="ru"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/x-icon" href="/favicon.ico"><meta name="generator" content="Astro v5.9.1"><title>Вторые</title><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/index.XLrlf0eg.css"></head> <body class="bg-space-dark text-gray-200 font-sans"> <!-- 👇 ФИНАЛЬНАЯ, УПРОЩЕННАЯ СТРУКТУРА ХЕДЕРА --> <header id="header" class="fixed top-0 left-0 w-full z-20"> <div class="max-w-4xl mx-auto flex justify-between items-center"> <a href="/" aria-label="На главную" class="z-10 p-4"> <img src="/icon.png" alt="Логотип Вторых" class="w-10 h-10 object-contain"> </a> <nav class="hidden md:flex gap-6 text-sm font-bold p-4"> <a href="#about" class="hover:text-secondary transition-colors">Кто мы</a> <a href="#principles" class="hover:text-secondary transition-colors">Принципы</a> <a href="#projects" class="hover:text-secondary transition-colors">Проекты</a> <a href="#faq" class="hover:text-secondary transition-colors">FAQ</a> </nav> </div> </header> <div class="background-container"> <div class="blob blob-1"></div> <div class="blob blob-2"></div> </div> <div id="cursor-glow"></div>  <main class="relative z-10 px-6 sm:px-8"> <div class="max-w-4xl mx-auto flex flex-col gap-28 sm:gap-40 py-20 sm:py-32"> <!-- 1. Главный экран --> <section id="hero" class="h-screen flex items-center justify-center text-center -mt-20 sm:-mt-32"> <div id="hero-text" class="will-change-transform"> <h1 class="text-5xl sm:text-7xl md:text-8xl font-black uppercase tracking-tighter" data-aos="zoom-in">
-Вторые
-</h1> <p class="text-lg sm:text-xl text-gray-300 mt-4" data-aos="fade-up" data-aos-delay="200">
-Создаем будущее, опираясь на настоящее.
-</p> </div> </section> <!-- 2. Кто мы? --> <section id="about" class="glass-card rounded-3xl p-8 md:p-12 scroll-target" data-aos="fade-up"> <h2 class="text-3xl md:text-4xl font-bold mb-6">Кто мы?</h2> <p class="text-lg text-gray-300 leading-relaxed">
-Мы — независимое сообщество активных и неравнодушных людей, которые стремятся к позитивным изменениям через реальные дела. Мы верим, что инициатива должна идти снизу, от каждого из нас, и объединяемся для создания проектов, которые делают мир вокруг лучше.
-</p> </section> <!-- 3. Наши принципы --> <section id="principles" class="scroll-target"> <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Наши принципы</h2> <div class="grid grid-cols-1 xs:grid-cols-3 gap-8"> <div class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:!scale-105 hover:border-secondary/50" data-aos="fade-up" data-aos-delay="100"> <div class="text-4xl text-secondary mb-4 transition-transform duration-300 group-hover:rotate-12">✦</div> <h3 class="text-xl font-bold mb-2">Автономность</h3> <p class="text-gray-400">Мы независимы от государства и корпораций. Все решения принимаются внутри сообщества.</p> </div> <div class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:!scale-105 hover:border-secondary/50" data-aos="fade-up" data-aos-delay="200"> <div class="text-4xl text-secondary mb-4 transition-transform duration-300 group-hover:rotate-12">✦</div> <h3 class="text-xl font-bold mb-2">Открытость</h3> <p class="text-gray-400">Мы за честный диалог, свободу мнений и прозрачность в наших действиях.</p> </div> <div class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:!scale-105 hover:border-secondary/50" data-aos="fade-up" data-aos-delay="300"> <div class="text-4xl text-secondary mb-4 transition-transform duration-300 group-hover:rotate-12">✦</div> <h3 class="text-xl font-bold mb-2">Действие</h3> <p class="text-gray-400">Мы предпочитаем реальные проекты и локальные инициативы громким декларациям.</p> </div> </div> </section> <!-- 👇 НОВЫЙ БЛОК: Проекты --> <section id="projects" class="scroll-target"> <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Что мы делаем</h2> <div class="grid grid-cols-1 md:grid-cols-2 gap-8"> <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="100"> <h3 class="text-xl font-bold mb-2 text-secondary">Cобираем участников</h3> <p class="text-gray-400">Наша организация появилась недавно, поэтому реализованных проектов пока что(!) нет.</p> </div> <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="200"> <h3 class="text-xl font-bold mb-2 text-secondary">Ваш будущий проект</h3> <p class="text-gray-400">У вас есть идея, но не хватает команды? Присоединяйтесь, и мы поможем ее реализовать!</p> </div> </div> </section> <!-- 👇 НОВЫЙ БЛОК: FAQ --> <section id="faq" class="scroll-target"> <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Частые вопросы</h2> <div class="flex flex-col gap-4"> <div class="faq-item glass-card rounded-xl border-l-4 border-primary/50 overflow-hidden" data-aos="fade-up"> <!-- Скрытый чекбокс, который хранит состояние (открыт/закрыт) --> <input type="checkbox" id="faq-как-присоединиться-к-движению?" class="peer absolute opacity-0 w-0 h-0"> <!-- Заголовок, который теперь является <label> для нашего чекбокса --> <label for="faq-как-присоединиться-к-движению?" class="flex justify-between items-center font-bold text-lg cursor-pointer p-5"> <span>Как присоединиться к сообществу?</span> <div class="plus-icon transition-transform duration-500 ease-in-out">
-+
-</div> </label> <!-- Контейнер для ответа, который мы будем анимировать --> <div class="answer-container grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"> <div class="overflow-hidden"> <p class="px-5 pb-5 text-gray-300"> Просто подпишитесь на наши соцсети и следите за анонсами. Участие во всех наших проектах добровольное. Вы можете прийти на одно мероприятие или стать постоянным организатором. </p> </div> </div> </div> <div class="faq-item glass-card rounded-xl border-l-4 border-primary/50 overflow-hidden" data-aos="fade-up"> <!-- Скрытый чекбокс, который хранит состояние (открыт/закрыт) --> <input type="checkbox" id="faq-это-политическая-организация?" class="peer absolute opacity-0 w-0 h-0"> <!-- Заголовок, который теперь является <label> для нашего чекбокса --> <label for="faq-это-политическая-организация?" class="flex justify-between items-center font-bold text-lg cursor-pointer p-5"> <span>Это политическая организация?</span> <div class="plus-icon transition-transform duration-500 ease-in-out">
-+
-</div> </label> <!-- Контейнер для ответа, который мы будем анимировать --> <div class="answer-container grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"> <div class="overflow-hidden"> <p class="px-5 pb-5 text-gray-300"> Нет. Мы — общественная инициатива, сфокусированная на конкретных социальных, культурных и экологических проектах. Мы находимся вне политической повестки. </p> </div> </div> </div> <div class="faq-item glass-card rounded-xl border-l-4 border-primary/50 overflow-hidden" data-aos="fade-up"> <!-- Скрытый чекбокс, который хранит состояние (открыт/закрыт) --> <input type="checkbox" id="faq-нужно-ли-платить-взносы?" class="peer absolute opacity-0 w-0 h-0"> <!-- Заголовок, который теперь является <label> для нашего чекбокса --> <label for="faq-нужно-ли-платить-взносы?" class="flex justify-between items-center font-bold text-lg cursor-pointer p-5"> <span>Нужно ли платить взносы?</span> <div class="plus-icon transition-transform duration-500 ease-in-out">
-+
-</div> </label> <!-- Контейнер для ответа, который мы будем анимировать --> <div class="answer-container grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"> <div class="overflow-hidden"> <p class="px-5 pb-5 text-gray-300"> Нет, у нас нет никаких обязательных взносов. "Вторые" существуют за счет энтузиазма участников. Иногда мы можем открывать добровольные сборы на конкретные проекты, и все отчеты будут полностью прозрачны. </p> </div> </div> </div> </div> </section> <!-- 4. Дисклеймер (остается без изменений) --> <section id="disclaimer" class="glass-card rounded-3xl p-8 md:p-12 border-2 border-secondary/50" data-aos="fade-up"> <h2 class="text-3xl md:text-4xl font-bold mb-6 text-secondary">Важное уточнение</h2> <p class="text-lg text-gray-300 leading-relaxed">
-Наша организация является полностью независимой инициативой и не имеет никакого отношения к государственной организации «Движение Первых». Мы ценим автономию и строим нашу деятельность на принципах добровольности и горизонтальных связей.
-</p> </section> <!-- 5. Призыв к действию (остается без изменений) --> <section id="cta" class="text-center" data-aos="zoom-in"> <h2 class="text-3xl md:text-4xl font-bold mb-4">Станьте частью сообщества</h2> <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
-Если наши ценности вам близки, присоединяйтесь к нашим каналам, чтобы следить за новостями и участвовать в проектах.
-</p> <div class="flex justify-center gap-4 flex-wrap"> <a href="https://t.me/vtorie22" class="bg-secondary text-space-dark font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105 active:scale-95">
-Telegram
-</a> <a href="https://tiktok.com/@paged0wn" class="border-2 border-gray-600 text-gray-300 font-bold py-3 px-8 rounded-full text-lg transition-all hover:border-gray-400 hover:text-white hover:scale-105 active:scale-95">
-TikTok
-</a> </div> </section> </div> </main> <script type="module">const e=document.getElementById("hero-text");let t=!1;e&&document.addEventListener("scroll",()=>{t||(window.requestAnimationFrame(()=>{const n=window.scrollY;e.style.transform=`translateY(${n*.4}px)`,e.style.opacity=`${Math.max(0,1-n/400)}`,t=!1}),t=!0)});</script>  <footer class="text-center p-10 text-gray-500">
-Сделано с любовью для Вторых от m1lk1n
-</footer> <!-- Скрипт остается без изменений, он работает идеально --> <script type="module">const t=document.getElementById("glow"),n=document.getElementById("header");t&&document.addEventListener("pointermove",e=>{t.style.transform=`translate(${e.clientX}px, ${e.clientY}px)`});n&&window.addEventListener("scroll",()=>{n.classList.toggle("is-scrolled",window.scrollY>50)});</script> <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-        offset: 50,
-      });
-    </script> </body> </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вторые</title>
+    <style>
+        /* Original styles */
+        body.bg-space-dark {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Casino styles */
+        .casino-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .slot-machine {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .slot {
+            width: 120px;
+            height: 180px;
+            border: 3px solid #4f46e5;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .slot-inner {
+            position: absolute;
+            width: 100%;
+            transition: transform 0.1s;
+        }
+        
+        .spin-btn {
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .spin-btn:hover {
+            background-color: #6366f1;
+            transform: scale(1.05);
+        }
+        
+        .spin-btn:disabled {
+            background-color: #6b7280;
+            cursor: not-allowed;
+        }
+        
+        .result-message {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            min-height: 2rem;
+            color: #fbbf24;
+            font-weight: bold;
+        }
+        
+        /* Fireworks */
+        .firework {
+            position: fixed;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 100;
+            animation: firework 1s forwards;
+        }
+        
+        @keyframes firework {
+            0% { transform: translate(var(--x), var(--y)); opacity: 1; }
+            100% { transform: translate(var(--x-end), var(--y-end)); opacity: 0; }
+        }
+        
+        /* Original blob styles */
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.2;
+        }
+        
+        .blob-1 {
+            background: linear-gradient(120deg, #4f46e5, #10b981);
+            width: 500px;
+            height: 500px;
+            top: -100px;
+            left: -100px;
+            animation: blob-move 20s infinite alternate;
+        }
+        
+        .blob-2 {
+            background: linear-gradient(120deg, #f59e0b, #ec4899);
+            width: 600px;
+            height: 600px;
+            bottom: -150px;
+            right: -100px;
+            animation: blob-move 25s infinite alternate-reverse;
+        }
+        
+        @keyframes blob-move {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(100px, 100px) rotate(180deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        #cursor-glow {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(79, 70, 229, 0.2) 0%, rgba(79, 70, 229, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-space-dark text-gray-200 font-sans">
+    <header id="header" class="fixed top-0 left-0 w-full z-20">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <a href="/" aria-label="На главную" class="z-10 p-4">
+                <img src="/icon.png" alt="Логотип Вторых" class="w-10 h-10 object-contain">
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-bold p-4">
+                <a href="#about" class="hover:text-secondary transition-colors">Кто мы</a>
+                <a href="#principles" class="hover:text-secondary transition-colors">Принципы</a>
+                <a href="#projects" class="hover:text-secondary transition-colors">Проекты</a>
+                <a href="#faq" class="hover:text-secondary transition-colors">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="background-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <div id="cursor-glow"></div>
+
+    <main class="relative z-10 px-6 sm:px-8">
+        <div class="max-w-4xl mx-auto flex flex-col gap-28 sm:gap-40 py-20 sm:py-32">
+            <!-- 1. Главный экран -->
+            <section id="hero" class="h-screen flex items-center justify-center text-center -mt-20 sm:-mt-32">
+                <div id="hero-text" class="will-change-transform">
+                    <h1 class="text-5xl sm:text-7xl md:text-8xl font-black uppercase tracking-tighter">Вторые</h1>
+                    <p class="text-lg sm:text-xl text-gray-300 mt-4">Создаем будущее, опираясь на настоящее.</p>
+                </div>
+            </section>
+            
+            <!-- Казино секция -->
+            <section id="casino" class="glass-card rounded-3xl p-8 md:p-12 scroll-target">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Казино Вторых</h2>
+                <div class="casino-container">
+                    <div class="slot-machine">
+                        <div class="slot">
+                            <div class="slot-inner" id="slot1">🍒</div>
+                        </div>
+                        <div class="slot">
+                            <div class="slot-inner" id="slot2">🍋</div>
+                        </div>
+                        <div class="slot">
+                            <div class="slot-inner" id="slot3">🍊</div>
+                        </div>
+                    </div>
+                    <button class="spin-btn" id="spinBtn">Крутить</button>
+                    <div class="result-message" id="resultMessage"></div>
+                </div>
+            </section>
+
+            <!-- 2. Кто мы? -->
+            <section id="about" class="glass-card rounded-3xl p-8 md:p-12 scroll-target">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Кто мы?</h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Мы — независимое сообщество активных и неравнодушных людей, которые стремятся к позитивным изменениям через реальные дела. Мы верим, что инициатива должна идти снизу, от каждого из нас, и объединяемся для создания проектов, которые делают мир вокруг лучше.
+                </p>
+            </section>
+
+            <!-- 3. Наши принципы -->
+            <section id="principles" class="scroll-target">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Наши принципы</h2>
+                <div class="grid grid-cols-1 xs:grid-cols-3 gap-8">
+                    <div class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:!scale-105 hover:border-secondary/50">
+                        <div class="text-4xl text-secondary mb-4 transition-transform duration-300 group-hover:rotate-12">✦</div>
+                        <h3 class="text-xl font-bold mb-2">Автономность</h3>
+                        <p class="text-gray-400">Мы независимы от государства и корпораций. Все решения принимаются внутри сообщества.</p>
+                    </div>
+                    <div class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:!scale-105 hover:border-secondary/50">
+                        <div class="text-4xl text-secondary mb-4 transition-transform duration-300 group-hover:rotate-12">✦</div>
+                        <h3 class="text-xl font-bold mb-2">Открытость</h3>
+                        <p class="text-gray-400">Мы за честный диалог, свободу мнений и прозрачность в наших действиях.</p>
+                    </div>
+                    <div class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:!scale-105 hover:border-secondary/50">
+                        <div class="text-4xl text-secondary mb-4 transition-transform duration-300 group-hover:rotate-12">✦</div>
+                        <h3 class="text-xl font-bold mb-2">Действие</h3>
+                        <p class="text-gray-400">Мы предпочитаем реальные проекты и локальные инициативы громким декларациям.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Проекты -->
+            <section id="projects" class="scroll-target">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Что мы делаем</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Собираем участников</h3>
+                        <p class="text-gray-400">Наша организация появилась недавно, поэтому реализованных проектов пока что(!) нет.</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Ваш будущий проект</h3>
+                        <p class="text-gray-400">У вас есть идея, но не хватает команды? Присоединяйтесь, и мы поможем ее реализовать!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. FAQ -->
+            <section id="faq" class="scroll-target">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Частые вопросы</h2>
+                <div class="flex flex-col gap-4">
+                    <div class="faq-item glass-card rounded-xl border-l-4 border-primary/50 overflow-hidden">
+                        <input type="checkbox" id="faq-как-присоединиться-к-движению?" class="peer absolute opacity-0 w-0 h-0">
+                        <label for="faq-как-присоединиться-к-движению?" class="flex justify-between items-center font-bold text-lg cursor-pointer p-5">
+                            <span>Как присоединиться к сообществу?</span>
+                            <div class="plus-icon transition-transform duration-500 ease-in-out">+</div>
+                        </label>
+                        <div class="answer-container grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="px-5 pb-5 text-gray-300">
+                                    Просто подпишитесь на наши соцсети и следите за анонсами. Участие во всех наших проектах добровольное. Вы можете прийти на одно мероприятие или стать постоянным организатором.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card rounded-xl border-l-4 border-primary/50 overflow-hidden">
+                        <input type="checkbox" id="faq-это-политическая-организация?" class="peer absolute opacity-0 w-0 h-0">
+                        <label for="faq-это-политическая-организация?" class="flex justify-between items-center font-bold text-lg cursor-pointer p-5">
+                            <span>Это политическая организация?</span>
+                            <div class="plus-icon transition-transform duration-500 ease-in-out">+</div>
+                        </label>
+                        <div class="answer-container grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="px-5 pb-5 text-gray-300">
+                                    Нет. Мы — общественная инициатива, сфокусированная на конкретных социальных, культурных и экологических проектах. Мы находимся вне политической повестки.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card rounded-xl border-l-4 border-primary/50 overflow-hidden">
+                        <input type="checkbox" id="faq-нужно-ли-платить-взносы?" class="peer absolute opacity-0 w-0 h-0">
+                        <label for="faq-нужно-ли-платить-взносы?" class="flex justify-between items-center font-bold text-lg cursor-pointer p-5">
+                            <span>Нужно ли платить взносы?</span>
+                            <div class="plus-icon transition-transform duration-500 ease-in-out">+</div>
+                        </label>
+                        <div class="answer-container grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="px-5 pb-5 text-gray-300">
+                                    Нет, у нас нет никаких обязательных взносов. "Вторые" существуют за счет энтузиазма участников. Иногда мы можем открывать добровольные сборы на конкретные проекты, и все отчеты будут полностью прозрачны.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Дисклеймер -->
+            <section id="disclaimer" class="glass-card rounded-3xl p-8 md:p-12 border-2 border-secondary/50">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-secondary">Важное уточнение</h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Наша организация является полностью независимой инициативой и не имеет никакого отношения к государственной организации «Движение Первых». Мы ценим автономию и строим нашу деятельность на принципах добровольности и горизонтальных связей.
+                </p>
+            </section>
+
+            <!-- 7. Призыв к действию -->
+            <section id="cta" class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Станьте частью сообщества</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+                    Если наши ценности вам близки, присоединяйтесь к нашим каналам, чтобы следить за новостями и участвовать в проектах.
+                </p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="https://t.me/vtorie22" class="bg-secondary text-space-dark font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105 active:scale-95">
+                        Telegram
+                    </a>
+                    <a href="https://tiktok.com/@paged0wn" class="border-2 border-gray-600 text-gray-300 font-bold py-3 px-8 rounded-full text-lg transition-all hover:border-gray-400 hover:text-white hover:scale-105 active:scale-95">
+                        TikTok
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center p-10 text-gray-500">
+        Сделано с любовью для Вторых от d1np1
+    </footer>
+
+    <script>
+        // Original scripts
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hero text parallax
+            const heroText = document.getElementById('hero-text');
+            let ticking = false;
+            
+            heroText && document.addEventListener('scroll', () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const scrollY = window.scrollY;
+                        heroText.style.transform = `translateY(${scrollY * 0.4}px)`;
+                        heroText.style.opacity = `${Math.max(0, 1 - scrollY / 400)}`;
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+            
+            // Cursor glow effect
+            const cursorGlow = document.getElementById('cursor-glow');
+            cursorGlow && document.addEventListener('pointermove', (e) => {
+                cursorGlow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            });
+            
+            // Header scroll effect
+            const header = document.getElementById('header');
+            header && window.addEventListener('scroll', () => {
+                header.classList.toggle('is-scrolled', window.scrollY > 50);
+            });
+            
+            // Initialize AOS
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    once: true,
+                    offset: 50,
+                });
+            }
+            
+            // Casino script
+            const symbols = ['🍒', '🍋', '🍊', '🍇', '🍉', '7️⃣', '🔔', '💎'];
+            const slot1 = document.getElementById('slot1');
+            const slot2 = document.getElementById('slot2');
+            const slot3 = document.getElementById('slot3');
+            const spinBtn = document.getElementById('spinBtn');
+            const resultMessage = document.getElementById('resultMessage');
+            
+            let isSpinning = false;
+            let spinCount = 0;
+            const totalSpins = 30;
+            
+            // Create audio elements
+            const spinSound = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-slot-machine-spin-1930.mp3');
+            const winSound = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3');
+            
+            spinBtn.addEventListener('click', spin);
+            
+            function spin() {
+                if (isSpinning) return;
+                
+                isSpinning = true;
+                spinBtn.disabled = true;
+                resultMessage.textContent = '';
+                spinCount = 0;
+                spinSound.currentTime = 0;
+                spinSound.play();
+                
+                const spinInterval = setInterval(() => {
+                    slot1.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+                    slot2.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+                    slot3.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+                    
+                    spinCount++;
+                    
+                    if (spinCount >= totalSpins) {
+                        clearInterval(spinInterval);
+                        isSpinning = false;
+                        spinBtn.disabled = false;
+                        spinSound.pause();
+                        checkResult();
+                    }
+                }, 100);
+            }
+            
+            function checkResult() {
+                const result1 = slot1.textContent;
+                const result2 = slot2.textContent;
+                const result3 = slot3.textContent;
+                
+                if (result1 === result2 && result2 === result3) {
+                    resultMessage.textContent = 'ДЖЕКПОТ! 🎉';
+                    winSound.play();
+                    createFireworks(30);
+                } else if (result1 === result2 || result1 === result3 || result2 === result3) {
+                    resultMessage.textContent = 'Вы выиграли! 💰';
+                    winSound.play();
+                    createFireworks(15);
+                } else {
+                    resultMessage.textContent = 'Попробуйте еще раз!';
+                }
+            }
+            
+            function createFireworks(count) {
+                for (let i = 0; i < count; i++) {
+                    setTimeout(() => {
+                        const firework = document.createElement('div');
+                        firework.className = 'firework';
+                        
+                        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+                        firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                        
+                        const startX = window.innerWidth / 2;
+                        const startY = window.innerHeight / 2;
+                        
+                        const angle = Math.random() * Math.PI * 2;
+                        const distance = 100 + Math.random() * 200;
+                        const endX = Math.cos(angle) * distance;
+                        const endY = Math.sin(angle) * distance;
+                        
+                        firework.style.left = `${startX}px`;
+                        firework.style.top = `${startY}px`;
+                        firework.style.setProperty('--x', '0px');
+                        firework.style.setProperty('--y', '0px');
+                        firework.style.setProperty('--x-end', `${endX}px`);
+                        firework.style.setProperty('--y-end', `${endY}px`);
+                        
+                        document.body.appendChild(firework);
+                        
+                        setTimeout(() => {
+                            firework.remove();
+                        }, 1000);
+                    }, Math.random() * 500);
+                }
+            }
+            
+            // Initialize slots with random symbols
+            slot1.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            slot2.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            slot3.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        });
+    </script>
+</body>
+</html>
